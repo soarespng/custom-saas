@@ -4,58 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Corretora</title>
+    <title>Custom Site</title>
     <script src="./scripts/index.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
     <!-- HEADER -->
+
     <header>
         <h1>LOGO</h1>
         <ul class="navbar">
-            <li><a href="">HOME</a></li>
-            <li><a href="">IMÓVEIS</a></li>
+            <li><a href="#section1">HOME</a></li>
+            <li><a href="#section2">IMÓVEIS</a></li>
             <li><a href="">ANUNCIE</a></li>
-            <li><a href="">CONTATO</a></li>
+            <li><a href="#section3">CONTATO</a></li>
         </ul>
     </header>
-    <!-- SESSAO INICIO -->
-    <section class="sessao-inicio">
-        <h1>Um lar é feito de amor e sonhos</h1>
-        <img src="./styles/assets/house.png">
-    </section>
-    <!-- SESSAO SERVIÇOS -->
-    <section class="sessao-servicos">
-        <h1>Lorem Ipsum</h1>
-        <div class="container-servicos">
-            <div>CAPAO</div>
-            <div>REDONDO</div>
-            <div>CAPAO</div>
-            <div>REDONDO</div>
-        </div>
-    </section>
-    <!-- SESSAO BUSCA -->
-    <section class="sessao-busca">
-        <h1>Encontre seu lar</h1>
-        <div class="container-busca">
-            <div class="form-busca">
 
+    <!-- SESSAO HOME -->
+
+    <section class="section-home" id="section1">
+        <div class="container">
+            <h1>Encontre a propriedade perfeita</h1>
+            <p>Oferecemos um serviço completo para o anuncio, compra ou aluguel de imóveis.</p>
+            <div class="search-box">
+                <input type="text" placeholder="Bairro">
+                <select id="">
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="terreno">Terreno</option>
+                    <option value="sitio">Sitio</option>
+                    <option value="chacara">Chacará</option>
+                </select>
+                <input type="number" placeholder="Quartos">
+                <button>Procurar</button>
             </div>
         </div>
     </section>
+
     <!-- SESSAO IMOVEIS -->
-    <section class="sessao-imoveis">
-        <h1>Imóveis</h1>
-        <div class="container-imoveis">
-            <div class="imovel">Elemento 1</div>
-            <div class="imovel">Elemento 2</div>
-            <div class="imovel">Elemento 3</div>
-            <div class="imovel">Elemento 4</div>
-            <div class="imovel">Elemento 5</div>
-            <div class="imovel">Elemento 6</div>
+
+    <section class="section-imoveis" id="section2">
+        <div class="container">
+            <h2>Imóveis</h2>
+            <div class="properties-list">
+                <div class="property">
+                    <div><img src="./styles/assets/casa.png" alt="Imagem da propiedade"></div>
+                    <div class="property-info">
+                        <h3>São Paulo, Vila Guilherme, Rua Padre Caldas Barbosa</h3>
+                        <p>2 Quartos · 1 Vaga · 89 m²</p>
+                        <div>
+                            <span>R$ 1.890</span>
+                            <small>Aluguel</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="property">
+                    <div><img src="./styles/assets/casa.png" alt="Imagem da propiedade"></div>
+                    <div class="property-info">
+                        <h3>São Paulo, Vila Guilherme, Rua Padre Caldas Barbosa</h3>
+                        <p>2 Quartos · 1 Vaga · 89 m²</p>
+                        <span>R$ 289.390</span>
+                        <small>Aluguel</small>
+                    </div>
+                </div>
+                <div class="property">
+                    <div><img src="./styles/assets/casa.png" alt="Imagem da propiedade"></div>
+                    <div class="property-info">
+                        <h3>São Paulo, Vila Guilherme, Rua Padre Caldas Barbosa</h3>
+                        <p>2 Quartos · 1 Vaga · 89 m²</p>
+                        <span>R$ 380.890</span>
+                        <small>Compra</small>
+                    </div>
+                </div>
+            </div>
+            <div class="properties-list">
+                <div class="property">
+                    <div><img src="./styles/assets/casa.png" alt="Imagem da propiedade"></div>
+                    <div class="property-info">
+                        <h3>São Paulo, Vila Guilherme, Rua Padre Caldas Barbosa</h3>
+                        <p>2 Quartos · 1 Vaga · 89 m²</p>
+                        <span>R$ 2.800</span>
+                        <small>Aluguel</small>
+                    </div>
+                </div>
+                <div class="property">
+                    <div><img src="./styles/assets/casa.png" alt="Imagem da propiedade"></div>
+                    <div class="property-info">
+                        <h3>São Paulo, Vila Guilherme, Rua Padre Caldas Barbosa</h3>
+                        <p>2 Quartos · 1 Vaga · 89 m²</p>
+                        <span>R$ 188.090</span>
+                        <small>Compra</small>
+                    </div>
+                </div>
+                <div class="property">
+                    <div><img src="./styles/assets/casa.png" alt="Imagem da propiedade"></div>
+                    <div class="property-info">
+                        <h3>São Paulo, Vila Guilherme, Rua Padre Caldas Barbosa</h3>
+                        <p>2 Quartos · 1 Vaga · 89 m²</p>
+                        <span>R$ 2.789</span>
+                        <small>Aluguel</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- SESSAO CONTATO -->
+
+    <section class="cta" id="section3">
+        <div class="container">
+            <h2>Find your best Real Estate</h2>
+            <p>Explore from apartments, builder floors, villas and more.</p>
+            <button>Contact Us</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
