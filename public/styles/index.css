@@ -85,6 +85,9 @@ header h1 {
 /* SESSAO HOME */
 
 .section-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     height: 50vh;
     padding: 100px 0;
@@ -155,10 +158,11 @@ header h1 {
 
 .properties-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .property {
+    margin: 0rem 1rem;
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
